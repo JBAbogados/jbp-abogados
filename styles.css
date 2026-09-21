@@ -102,3 +102,15 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
   .service-grid,.team-grid{grid-template-columns:1fr}.service-card{min-height:auto}.principle-list>div{grid-template-columns:45px 1fr;gap:15px}.principle-list p{grid-column:2}
   .contact h2{font-size:50px}.footer-grid{flex-direction:column;align-items:flex-start}
 }
+.whatsapp-qr {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.whatsapp-qr img {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 12px auto 0;
+}
