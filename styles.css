@@ -94,7 +94,7 @@ a{color:inherit;text-decoration:none}
   color:#191919;
 }
 .team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
-.person-photo{height:410px;background:#242321;display:flex;align-items:center;justify-content:center;border-bottom:2px solid var(--gold)}
+.person-photo{height:280px;background:#242321;display:flex;align-items:center;justify-content:center;border-bottom:2px solid var(--gold)}
 .person-photo span{font-family:"Cormorant Garamond",serif;font-size:100px;color:rgba(255,255,255,.8);letter-spacing:.05em}
 .person-meta{padding:20px 0}.person-meta>span{font-size:9px;letter-spacing:.18em;color:#8f713b;font-weight:700}.person-meta h3{font-family:"Cormorant Garamond",serif;font-size:36px;font-weight:600}.person-meta p{font-size:12px;color:#777}
 .contact{background:#111;color:#fff;padding:120px 0}
