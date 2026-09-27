@@ -20,6 +20,7 @@ a{color:inherit;text-decoration:none}
 .brand{
   display:flex;
   align-items:center;
+  gap:8px;
   color:#fff;
   text-decoration:none;
 }
@@ -110,7 +111,20 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
   .container{width:min(var(--max),calc(100% - 38px))}
   .menu-toggle{display:block}.main-nav{display:none;position:absolute;top:82px;left:0;right:0;background:#111;flex-direction:column;align-items:stretch;padding:15px 20px;gap:0}.main-nav.open{display:flex}.main-nav a{padding:13px 0;border-bottom:1px solid rgba(255,255,255,.07)}.nav-cta{text-align:center;margin-top:10px}
   .hero-grid,.two-col,.section-heading,.contact-grid{grid-template-columns:1fr;gap:40px}
-  .hero{padding-top:120px;padding-bottom:80px}.hero-emblem{display:none}.hero h1{font-size:58px}
+  .hero{padding-top:120px;padding-bottom:80px}
+  .hero-emblem{
+    display:flex;
+    margin-top:30px;
+  }
+
+  .emblem-frame{
+    width:260px;
+    height:260px;
+  }
+
+.hero-logo{
+  width:220px;
+}
   .strip-grid{grid-template-columns:1fr}.strip-grid>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}
   .section{padding:85px 0}.section-content h2,.section-heading h2,.principles-inner>h2{font-size:47px}
   .service-grid,.team-grid{grid-template-columns:1fr}.service-card{min-height:auto}.principle-list>div{grid-template-columns:45px 1fr;gap:15px}.principle-list p{grid-column:2}
