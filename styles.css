@@ -129,6 +129,9 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
   .section{padding:85px 0}.section-content h2,.section-heading h2,.principles-inner>h2{font-size:47px}
   .service-grid,.team-grid{grid-template-columns:1fr}.service-card{min-height:auto}.principle-list>div{grid-template-columns:45px 1fr;gap:15px}.principle-list p{grid-column:2}
   .contact h2{font-size:50px}.footer-grid{flex-direction:column;align-items:flex-start}
+  }
+
+}
 }
 .whatsapp-qr {
   text-align: center;
@@ -161,6 +164,12 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
 
 .reach-map img{
   width:100%;
-  height:350;
-  object-fit:cover;
+  height:auto;
+  display:block;
+}
+@media(max-width:850px){
+  .reach-map img{
+    height:350px;
+    object-fit:cover;
+  }
 }
