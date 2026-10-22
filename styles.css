@@ -169,6 +169,7 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
 }
 
 
+/* Menú desplegable de servicios */
 .dropdown {
   position: relative;
 }
@@ -182,7 +183,7 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 220px;
+  min-width: 240px;
   background: #111;
   border: 1px solid rgba(184, 149, 85, 0.45);
   padding: 8px 0;
@@ -198,12 +199,68 @@ footer{background:#0b0b0b;color:#aaa;border-top:1px solid rgba(255,255,255,.08);
 }
 
 .dropdown-menu a:hover {
-  background: #292929;
-  color: #c5a467;
+  background: #222;
+  color: var(--gold-light);
 }
 
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
+/* Mostrar el primer nivel al pasar por Servicios */
+.dropdown:hover > .dropdown-menu,
+.dropdown:focus-within > .dropdown-menu {
   display: block;
 }
+
+/* Segundo nivel: actuaciones */
+.submenu {
+  position: relative;
+}
+
+.submenu-menu {
+  display: none;
+  position: absolute;
+  top: -9px;
+  left: 100%;
+  min-width: 290px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background: #111;
+  border: 1px solid rgba(184, 149, 85, 0.45);
+  padding: 8px 0;
+}
+
+.submenu:hover > .submenu-menu,
+.submenu:focus-within > .submenu-menu {
+  display: block;
+}
+
+.submenu > a::after {
+  content: "›";
+  float: right;
+  margin-left: 20px;
+  color: var(--gold-light);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 850px) {
+  .dropdown-menu,
+  .submenu-menu {
+    position: static;
+    min-width: 0;
+    width: 100%;
+    max-height: none;
+    border: 0;
+    padding: 0 0 0 14px;
+  }
+
+  .dropdown:hover > .dropdown-menu {
+    display: none;
+  }
+
+  .dropdown:focus-within > .dropdown-menu,
+  .submenu:focus-within > .submenu-menu {
+    display: block;
+  }
+
+  .submenu:hover > .submenu-menu {
+    display: none;
+  }
 }
